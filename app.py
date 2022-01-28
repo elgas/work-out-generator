@@ -21,6 +21,7 @@ def get_workouts():
     return render_template("workouts.html", workouts=workouts)
 
 
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"), 
              port=int(os.environ.get("PORT")),
