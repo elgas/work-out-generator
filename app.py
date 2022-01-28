@@ -45,6 +45,11 @@ def register():
     return render_template("register.html")
 
 
+@app.route("/add_workout")
+def add_workout():
+    return render_template("add_workout.html")
+
+
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"), 
