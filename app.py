@@ -21,9 +21,27 @@ def get_workouts():
     workouts = mongo.db.workouts.find()
     return render_template("workouts.html", workouts=workouts)
 
-
+# Code from CodeInstitute Python tutorials
 @app.route("/register", methods=["GET", "POST"])
 def register():
+    if request.method == "POST":
+        # checking if username already exists in our database
+        existing_user = mongo.db.users.find_one(
+            {"username": request.form.get("username").lower()})
+        
+        if existing_user:
+            flash("Username already in use")
+            return redirect(url_for("register"))
+
+        register = {
+            "username": request.form.get("username").lower(),
+            "password": generate_password_hash(request.form.get("password"))
+        }
+        mongo.db.users.insert_one(register)
+
+        # Puting the new user into 'session' cookie
+        session["user"] = request.form.get("username").lower()
+        flash("Registration Successful!!")
     return render_template("register.html")
 
 

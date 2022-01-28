@@ -2,15 +2,17 @@
 {% block content %}
 
     
-
+<!--Form from Bootstrap library-->
     <div class="position-center container-lg">
         <h3 class="position-center">Register</h3>
         <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('register') }}">
+
             <!-- Username -->
             <div class="col-8">
                 <label for="username" class="form-label">Username</label>
                 <div class="input-group has-validation">
-                    <input type="text" class="form-control" id="username" aria-describedby="inputGroupPrepend" name="username" required>
+                    <input type="text" class="form-control" id="username" aria-describedby="inputGroupPrepend" name="username" minlength="5"
+                    maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
                     <div class="invalid-feedback">Please choose a username.</div>
                 </div>
               </div>
@@ -18,7 +20,8 @@
             <!-- Password -->  
             <div class="col-8">
                 <label for="password" class="form-label">Password</label>
-                <input type="password" class="form-control" id="password" name="password" requared>
+                <input type="password" class="form-control" id="password" name="password" minlength="5"
+                maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
             </div>
             <br>
             <!-- Register button -->
