@@ -2,10 +2,32 @@
 {% block content %}
 
     <h3>Add Work-Out</h3>
-    <form>
+    <!-- Input group from Bootstrap library-->
+    <form method="POST" action="">
         <div class="input-group mb-3">
-            <span class="input-group-text" id="inputGroup-sizing-default">Default</span>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            <span class="input-group-text" id="inputGroup-sizing-default">Work-out plan name</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" 
+                id="workout_name" name="workout_name" minlength="3" maxlength="60"
+            type="text" class="validate" required>
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">Exercises</span>
+            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" 
+                id="workout_description" name="workout_description" minlength="5"
+            maxlength="200" class="materialize-textarea validate" required>
+        </div>
+        <div>
+            <select class="form-select validate" multiple aria-label="multiple select example" id="workout_duration_mins" 
+                name="workout_duration_mins" required>
+                <option selected>Work-Out duration in minutes:</option>
+                <option value="1">10</option>
+                <option value="2">15</option>
+                <option value="3">20</option>
+                <option value="4">30</option>
+                <option value="5">45</option>
+                <option value="6">60</option>
+                <option value="7">90</option>
+              </select>
         </div>
     </form>
 
