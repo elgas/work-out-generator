@@ -3,7 +3,8 @@
 
     <h3>Add Work-Out</h3>
     <!-- Input group from Bootstrap library-->
-    <form method="POST" action="">
+    <form method="POST" action="{{ url_for('add_workout') }}">
+        <!-- Category selection-->
         <div class="input-group mb-3">
             <select class="form-select validate" aria-label="Default select example" id="workout_name" name="workout_name" required>
                 <option disabled selected>Choose Work-Out</option>
@@ -12,18 +13,21 @@
                 {% endfor %}
             </select>
         </div>
+        <!-- Plan input-->
         <div class="input-group mb-3">
             <span class="input-group-text" id="inputGroup-sizing-default">Work-out plan name</span>
             <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" 
                 id="workout_name" name="workout_name" minlength="3" maxlength="60"
             type="text" class="validate" required>
         </div>
+        <!-- Description input-->
         <div class="input-group mb-3">
             <span class="input-group-text" id="inputGroup-sizing-default">Exercises</span>
             <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" 
                 id="workout_description" name="workout_description" minlength="5"
             maxlength="200" class="validate" required>
         </div>
+        <!-- Duration selction options-->
         <div>
             <select class="form-select validate" multiple aria-label="multiple select example" id="workout_duration_mins" 
                 name="workout_duration_mins" required>
@@ -36,6 +40,10 @@
                 <option value="6">60</option>
                 <option value="7">90</option>
               </select>
+        </div>
+        <!-- Submit button-->
+        <div>
+            <button type="button" class="btn btn-primary btn-lg">Add Work-Out</button>
         </div>
     </form>
 
