@@ -53,7 +53,7 @@
 
 ## Testing
 
-    - (To be added)
+    - Links don't work and the app is not styled yet.
 
 ## Credits
 
@@ -61,7 +61,7 @@
 
    - [Bootstrap 4.4.1](https://getbootstrap.com/) Library was used throughout the 
   project to make the site responsive and appealing by using the card features.
-   - CodeInsitute tutorials.
+   - Code Insitute python tutorials.
 
 ### Content
 
