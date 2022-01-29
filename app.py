@@ -47,7 +47,8 @@ def register():
 
 @app.route("/add_workout")
 def add_workout():
-    return render_template("add_workout.html")
+    categories = mongo.db.workouts.find().sort("workout_name", 1)
+    return render_template("add_workout.html", categories=categories)
 
 
 

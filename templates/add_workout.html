@@ -5,6 +5,14 @@
     <!-- Input group from Bootstrap library-->
     <form method="POST" action="">
         <div class="input-group mb-3">
+            <select class="form-select validate" aria-label="Default select example" id="workout_name" name="workout_name" required>
+                <option disabled selected>Choose Work-Out</option>
+                {% for category in categories %}
+                <option value="{{category.workout_name}}">{{category.workout_name}}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="input-group mb-3">
             <span class="input-group-text" id="inputGroup-sizing-default">Work-out plan name</span>
             <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" 
                 id="workout_name" name="workout_name" minlength="3" maxlength="60"
@@ -14,7 +22,7 @@
             <span class="input-group-text" id="inputGroup-sizing-default">Exercises</span>
             <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" 
                 id="workout_description" name="workout_description" minlength="5"
-            maxlength="200" class="materialize-textarea validate" required>
+            maxlength="200" class="validate" required>
         </div>
         <div>
             <select class="form-select validate" multiple aria-label="multiple select example" id="workout_duration_mins" 
