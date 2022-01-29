@@ -48,13 +48,13 @@ def register():
 @app.route("/add_workout", methods=["GET", "POST"])
 def add_workout():
     if request.method == "POST":
-        workout = {
+        work_out = {
             "workout_name": request.form.get("workout_name"),
             "workout_description": request.form.get("workout_description"),
             "workout_duration_mins": request.form.get("workout_duration_mins"),
             "created_by": session["user"]
             }
-        mongo.db.workouts.insert_one(workout)
+        mongo.db.workouts.insert_one(work_out)
         flash("Work-out Successfully Added")
         return redirect(url_for("get_workouts"))
 
