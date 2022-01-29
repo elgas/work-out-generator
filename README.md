@@ -6,8 +6,8 @@
 
 ## User Experience (UX)
 
-    - ### User Stories
-        - #### First Time Visitor Goals
+    ### User Stories
+        #### First Time Visitor Goals
             1. As a first time visitor, I want to be presented with easy to grasp information about the purpose of the application and the work-out features.
             2. As a first time visitor, I want to be able to navigate the site eaisly and quickly.
             3. As a first time visitor, I want the webapp to have appealing information and pictures that have meaning.
@@ -15,21 +15,21 @@
             5. As a first time visitor, I want to be able to register on a newsletter or more.
             6. As a first time visitor, I want to feel like the data I am inserting is safe.
         
-        -  #### Returning User Goals
+        #### Returning User Goals
             1. As a returning visitor, I want to find information about the work-outs that I have done, or selected.
             2. As a returning visitor, I want to find information about the new work-out schemes available.
             3. As a returning visitor, I want to find a way to get in touch if I have questions.
             4. As a returning visitor, I want to find social media links. 
 
-        -   #### Frequent User Goals
+        #### Frequent User Goals
             1. As a frequent user, I want to be able to rate the work-out plans.
             2. As a frequent user, I want to get be able to create my own work-out plans, that are visible only to me.
     
-- ### Design
-   - #### Colour Scheme
+### Design
+   #### Colour Scheme
       - Everything is white with contrasting black font colour to keep it simple and not to create an overload for the user.
-   - #### Imagery
-      - Pictures are used to explain the excersices in a direct way.
+   #### Imagery
+      - Pictures are used to explain the excersices.
 
 ## Features 
 
