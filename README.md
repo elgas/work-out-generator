@@ -2,7 +2,7 @@
 # Work-out Generator
 
     This a web application that offers the user the possibility to select work-outs for their training routine.
-    Project is on its initial phase, progress hindered. Meanwhile worki is going on to complete the project.
+    Project is on its initial phase. Meanwhile work is going on to complete the project.
 
 ## User Experience (UX)
 
@@ -59,9 +59,9 @@
 
 ### Code
 
-    - [Bootstrap 4.4.1](https://getbootstrap.com/) Library was used throughout the 
+   - [Bootstrap 4.4.1](https://getbootstrap.com/) Library was used throughout the 
   project to make the site responsive and appealing by using the card features.
-    - CodeInsitute tutorials.
+   - CodeInsitute tutorials.
 
 ### Content
 
